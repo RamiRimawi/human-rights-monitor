@@ -32,4 +32,4 @@ class CaseCreate(BaseModel):
     evidence: Optional[List[Evidence]]
     created_by: Optional[str]
     created_at: datetime = Field(default_factory=datetime.utcnow)
-    updated_at: Optional[datetime]
+    updated_at: Optional[datetime] = None
